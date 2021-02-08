@@ -1,13 +1,12 @@
 import React, {useState} from 'react'
 const Selection = (props) =>{
-    const[background, setBackground] = useState({background : ""});
+    const[background1, setBackground] = useState({background : ""});
     const {applyColor} = props;
     const change = (nextBackground) => {
         setBackground({background : nextBackground.background})
     }
-    console.log(background);
     return(
-        <div className="fit-Box" style={{background : background}} onClick={()=>{applyColor(change)}} >
+        <div className="fit-Box" style={{background : background1.background}} onClick={()=>{applyColor(change)}} >
             <h2 className="subheading">Selection</h2>
         </div>
     )
