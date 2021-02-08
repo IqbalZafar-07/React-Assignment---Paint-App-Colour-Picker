@@ -5,8 +5,9 @@ const Selection = (props) =>{
     const change = (nextBackground) => {
         setBackground({background : nextBackground.background})
     }
+    console.log(background);
     return(
-        <div className="fit-Box" style={background} onClick={()=>{applyColor(change)}} >
+        <div className="fit-Box" style={{background : background}} onClick={()=>{applyColor(change)}} >
             <h2 className="subheading">Selection</h2>
         </div>
     )
